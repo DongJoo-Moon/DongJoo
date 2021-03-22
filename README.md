@@ -25,7 +25,7 @@ bookstore (대학교 졸업작품 프로젝트)
 > 학번과 비밀번호를 입력할 수 있는 UI를 통해 입력한 뒤 로그인 버튼을 누르면 학번 값과 비밀번호 값이 문자열 값으로 변환되어
 > 파이어베이스에 보관하고 있는 값들을 비교하여 맞게되면 화면을 전환하는 기능 Intent를 사용해 로그인 화면에서 어플 메인화면으로
 > 이동하게 됩니다. 학번이나 비밀번호를 틀렸을 경우에는 Toast 기능을 통해 어플 하단에 경고 메시지를 나타내게 합니다.
-> '''
+> 
  loginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -64,5 +64,4 @@ bookstore (대학교 졸업작품 프로젝트)
                 });
             }
         });
-'''
 단과대 선택 및 도서 나열
