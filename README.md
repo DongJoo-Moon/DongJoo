@@ -1,3 +1,2 @@
 # DongJoo
-bookstore
-test-test,test-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-testtest-test
+bookstore(대학교 졸업작품 프로젝트)
