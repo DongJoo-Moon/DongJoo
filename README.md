@@ -22,7 +22,47 @@ bookstore (대학교 졸업작품 프로젝트)
 <hr/>
 
 + 로그인 기능
-> 학번과 비밀번호를 입력할 수 있는 ui에 학번과 비밀번호를 입력하면 이 정보들이 파이어베이스에 있는 실시간
-> 데이터베이스와 비교하게 됩니다. 둘 중에 하나라도 틑리면 아래에 ALERT 기능으로 경고 메시지를 발생시킵니다.
-> 
+> 학번과 비밀번호를 입력할 수 있는 UI를 통해 입력한 뒤 로그인 버튼을 누르면 학번 값과 비밀번호 값이 문자열 값으로 변환되어
+> 파이어베이스에 보관하고 있는 값들을 비교하여 맞게되면 화면을 전환하는 기능 Intent를 사용해 로그인 화면에서 어플 메인화면으로
+> 이동하게 됩니다. 학번이나 비밀번호를 틀렸을 경우에는 Toast 기능을 통해 어플 하단에 경고 메시지를 나타내게 합니다.
+> '''
+> loginButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                final String id = EditText_id.getText().toString();
+                final String pw = EditText_password.getText().toString();
+                databaseReference.child(id).addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        Iterator<DataSnapshot> child = dataSnapshot.getChildren().iterator();
+                        if(dataSnapshot.getChildrenCount() > 0 ){
+                            String fbPw = dataSnapshot.child("password").getValue().toString();
+                            String fbname = dataSnapshot.child("name").getValue().toString(); //firebase에서 name의 Value값을 get하고 string 시킴.
+
+                            if(fbPw.equals(pw)){
+                                Intent intent = new Intent(loginActivity.this, MainActivity.class);
+
+                                id_name = fbname;
+                                id_Snum = id;
+                                intent.putExtra("name", id_name);
+                                finish();
+
+                                Toast.makeText(loginActivity.this,fbname+"님 어서오세요.",Toast.LENGTH_LONG).show();
+                                startActivity(intent);
+                            }else{
+                                Toast.makeText(loginActivity.this,"비밀번호를 틀리셧습니다.",Toast.LENGTH_LONG).show();
+                            }
+                        }else{
+                            Toast.makeText(loginActivity.this,"학번과 비밀번호를 확인하십쇼",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+            }
+        });
+> '''
 단과대 선택 및 도서 나열
