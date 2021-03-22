@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bt31"
+        android:title="교육학과"/>
+    <item android:id="@+id/bt32"
+        android:title="유아교육학과"/>
+    <item android:id="@+id/bt33"
+        android:title="국어교육학과"/>
+    <item android:id="@+id/bt34"
+        android:title="영어교육학과"/>
+    <item android:id="@+id/bt35"
+        android:title="일어교육학과"/>
+    <item android:id="@+id/bt36"
+        android:title="가정교육학과"/>
+    <item android:id="@+id/bt37"
+        android:title="수학교육학과"/>
+    <item android:id="@+id/bt38"
+        android:title="과학교육학과"/>
+    <item android:id="@+id/bt39"
+        android:title="미술교육학과"/>
+    <item android:id="@+id/bt311"
+        android:title="음악교육학과"/>
+    <item android:id="@+id/bt312"
+        android:title="체육교육학과"/>
+
+</menu>

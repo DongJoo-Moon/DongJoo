@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:orderInCategory="100"
+        android:title="search"
+        app:showAsAction="ifRoom|collapseActionView"/>
+
+    <item android:id="@+id/shoppingButton2"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_local_grocery_store_black_24dp"
+        android:title="장바구니" />
+
+    <item android:id="@+id/myPageButton2"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="마이페이지" />
+
+
+</menu>

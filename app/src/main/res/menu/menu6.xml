@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bt61"
+        android:title="기계공학부"/>
+    <item android:id="@+id/bt62"
+        android:title="전기공학과"/>
+    <item android:id="@+id/bt63"
+        android:title="전자공학과"/>
+    <item android:id="@+id/bt64"
+        android:title="나노신소재공학과"/>
+    <item android:id="@+id/bt65"
+        android:title="컴퓨터공학부"/>
+    <item android:id="@+id/bt66"
+        android:title="정보통신공학과"/>
+    <item android:id="@+id/bt67"
+        android:title="건축학부"/>
+    <item android:id="@+id/bt68"
+        android:title="소방방재공학과"/>
+    <item android:id="@+id/bt69"
+        android:title="조선해양시스템공학과"/>
+    <item android:id="@+id/bt611"
+        android:title="산업디자인학과"/>
+
+</menu>

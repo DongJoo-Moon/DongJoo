@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bt21"
+        android:title="바이오융합학부"/>
+    <item android:id="@+id/bt22"
+        android:title="식품영양학과"/>
+    <item android:id="@+id/bt23"
+        android:title="물리치료학과"/>
+    <item android:id="@+id/bt24"
+        android:title="스포츠과학과"/>
+    <item android:id="@+id/bt25"
+        android:title="의류산업학과"/>
+    <item android:id="@+id/bt26"
+        android:title="간호학과"/>
+    <item android:id="@+id/bt27"
+        android:title="외식프랜차이즈학과"/>
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bt51"
+        android:title="법학과"/>
+    <item android:id="@+id/bt52"
+        android:title="행정학과"/>
+    <item android:id="@+id/bt53"
+        android:title="경찰학과"/>
+    <item android:id="@+id/bt54"
+        android:title="정치외교학과"/>
+    <item android:id="@+id/bt55"
+        android:title="미디어커뮤니케이션학과"/>
+    <item android:id="@+id/bt56"
+        android:title="경호보안학과"/>
+    <item android:id="@+id/bt57"
+        android:title="군사학과"/>
+
+</menu>

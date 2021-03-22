@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.used.usedFragment">
+
+    <TextView
+        android:id="@+id/text_used"
+        android:layout_width="426dp"
+        android:layout_height="109dp"
+        android:layout_weight="0"
+        android:baselineAligned="false"
+        android:text="단과대 선택"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/mun_gwa_go"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="중고 게시판" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bt11"
+        android:title="역사어문학부 한국어문학전공"/>
+    <item android:id="@+id/bt12"
+        android:title="역사어문학부 역사학전공"/>
+    <item android:id="@+id/bt13"
+        android:title="영중국제학부 영어학전공"/>
+    <item android:id="@+id/bt14"
+            android:title="영중국제학부 중국학전공"/>
+    <item android:id="@+id/bt15"
+        android:title="문화콘텐츠학과"/>
+    <item android:id="@+id/bt16"
+        android:title="사회복지학과"/>
+    <item android:id="@+id/bt17"
+        android:title="심리학과"/>
+    <item android:id="@+id/bt18"
+        android:title="사회학과"/>
+</menu>

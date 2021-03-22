@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bt41"
+        android:title="경제금융학과"/>
+    <item android:id="@+id/bt42"
+        android:title="국제무역물류학과"/>
+    <item android:id="@+id/bt43"
+        android:title="경영학부"/>
+    <item android:id="@+id/bt44"
+        android:title="관광학부"/>
+    <item android:id="@+id/bt45"
+        android:title="경영정보학과"/>
+</menu>

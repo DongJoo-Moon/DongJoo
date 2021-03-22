@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BookStore</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="navigation_drawer_open">11</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">BOOKSTORE</string>
+    <string name="menu_used">중고서비스</string>
+    <string name="menu_service">고객센터</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string-array name="query_suggestions">
+        <item>자바프로그래밍</item>
+        <item>이산수학</item>
+        <item>컴퓨터구조론</item>
+        <item>처음 배우는 암호화</item>
+        <item>리눅스 프로그래밍 원리와 실체</item>
+        <item>아두이노101</item>
+        <item>그림으로 쉽게 설명하는 안드로이드 프로그래밍</item>
+        <item>점프 투 파이썬 Do it!</item>
+        <item>C로 배우는 쉬운 자료구조</item>
+        <item>데이터통신과 네트워킹</item>
+        <item>쉽게 배우는 소프트웨어 공학</item>
+
+    </string-array>
+
+</resources>

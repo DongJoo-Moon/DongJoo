@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bookstore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/book_app1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/book_app1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".loginActivity">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".shoppingActivity"></activity>
+        <activity android:name=".ui.used.AddPostActivity"></activity>
+        <activity android:name=".ui.mypage.myPageActivity"></activity>
+        <activity android:name=".ui.used.Mun_gwa_used_activity"></activity>
+        <activity android:name=".ui.used.ChatActivity"></activity>
+        <activity android:name=".ui.Payment_Activity"></activity>
+        <activity android:name=".ui.book.searchView"></activity>
+        <activity android:name=".ui.engineering_college.computer"/>
+        <activity android:name=".ui.purchase_completed"/>
+        <activity android:name=".ui.service.FAQ.goods"/>
+        <activity android:name=".ui.service.FAQ.order"/>
+        <activity android:name=".ui.service.FAQ.Shipping"/>
+        <activity android:name=".ui.service.FAQ.cancell"/>
+        <activity android:name=".ui.service.FAQ.used"/>
+        <activity android:name=".ui.service.FAQ.Transaction"/>
+        <activity android:name=".ui.service.FAQ.Member_managment"/>
+        <activity android:name=".ui.service.FAQ.Member_account"/>
+        <activity android:name=".ui.service.FAQ.and_so"/>
+
+    </application>
+
+</manifest>

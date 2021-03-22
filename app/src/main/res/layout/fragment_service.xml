@@ -1,0 +1,368 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".ui.service.serviceFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="FAQ"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_card_giftcard_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="상품"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_toRightOf="@+id/btn1"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_event_available_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="주문결제"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_toRightOf="@+id/btn2"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_local_shipping_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="배송"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/btn1"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_loop_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="취소/교환/
+                    반품"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/btn2"
+                    android:layout_toRightOf="@+id/btn4"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_store_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="중고"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/btn3"
+                    android:layout_toRightOf="@+id/btn5"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_store_mall_directory_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="중고매장"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/btn4"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_person_outline_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="회원관리"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/btn5"
+                    android:layout_toRightOf="@+id/btn7"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_account_circle_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="회원계정"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/btn6"
+                    android:layout_toRightOf="@+id/btn8"
+                    android:background="@drawable/button_selector2"
+                    android:drawableTop="@drawable/ic_more_black_24dp"
+                    android:paddingTop="10dp"
+                    android:text="기타"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:text="자주 묻는 질문 TOP 10"
+                android:textSize="20dp" />
+
+            <ExpandableListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:groupIndicator="@null" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:text="1:1 문의내역 〉"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/button_selector2"
+                    android:text="1:1문의하기" />
+
+                <TextView
+                    android:id="@+id/sv2"
+                    android:layout_width="330dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/sv1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="문의 내역이 없습니다."
+                    android:textSize="20dp" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/sv2"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGray" />
+
+                <RelativeLayout
+                    android:id="@+id/call"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@+id/line2"
+                    android:background="@color/colorGray">
+
+                    <RelativeLayout
+                        android:id="@+id/call3"
+                        android:layout_width="330dp"
+                        android:layout_height="110dp"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/white"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp">
+
+                        <TextView
+                            android:id="@+id/sv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="일반문의" />
+
+                        <TextView
+                            android:id="@+id/line_sup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sv3"
+                            android:text="055-xxx-xxxx"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:text="평일 09:00 ~ 18:00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sv4"
+                            android:layout_alignParentRight="true"
+                            android:text="토,일요일 및 공휴일 휴무" />
+
+                        <View
+                            android:id="@+id/line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/line_sup"
+                            android:background="@color/colorGray" />
+
+                        <TextView
+                            android:id="@+id/sv5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/line3"
+                            android:text="중고샵 문의" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sv5"
+                            android:text="055-xxx-xxxx"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sv6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/line3"
+                            android:layout_alignParentRight="true"
+                            android:text="평일 09:00 ~ 18:00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sv6"
+                            android:layout_alignParentRight="true"
+                            android:text="토,일요일 및 공휴일 휴무" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/call"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorGray"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@color/colorBlack" />
+
+                    <Button
+                        android:id="@+id/recently_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_selector3"
+                        android:text="최근 본 상품" />
+
+                    <Button
+                        android:id="@+id/Shipping_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/recently_btn"
+                        android:background="@drawable/button_selector3"
+                        android:text="주문/배송" />
+
+                    <Button
+                        android:id="@+id/loggout_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/recently_btn"
+                        android:background="@drawable/button_selector3"
+                        android:text="로그아웃" />
+
+                    <TextView
+                        android:id="@+id/call2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Shipping_btn"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="고객센터 055-xxx-xxxx | 중고샵 055-xxx-xxxx"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/call2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="(평일 09:00 ~ 18:00 토요일,일요일 및 공휴일 휴무)" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

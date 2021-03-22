@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="문과대학"
+                    android:layout_marginLeft="20dp"/>
+
+                <Button
+                    android:id="@+id/btnn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnn1"
+                    android:text="건강과학대학"/>
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/btnn2"
+                    android:text="사범대학"/>
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_toRightOf="@id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경영대학"/>
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_below="@id/btnn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="법정대학"/>
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_below="@id/btnn1"
+                    android:layout_toRightOf="@id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공과대학"/>
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_below="@id/btnn1"
+                    android:layout_toRightOf="@id/btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="교양융합대학"/>
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_below="@id/btnn1"
+                    android:layout_toRightOf="@id/btn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="대학원"/>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/btn5"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/best"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:text="베스트셀러"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/best2"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:layout_below="@id/best"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/colorGray">
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:auto_cycle="true"
+                        app:corner_radius="20"
+                        app:delay="0"
+                        app:error_image="@drawable/color"
+                        app:period="1000"
+                        app:placeholder="@drawable/color" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/best2"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorGray" />
+
+
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="책후기"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn111"
+                    android:layout_width="151dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/line3"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/main_background1"
+                    android:onClick="browser1"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:layout_width="151dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/line3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_toRightOf="@+id/btn111"
+                    android:background="@drawable/book_review"
+                    android:onClick="browser2"
+                    tools:ignore="OnClick" />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/btn111"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/ksupick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/line4"
+                    android:text="경남대 PICK"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/pick"
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/ksupick"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/pick1"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_selector"
+                        android:text="전공책"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/pick2"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_selector"
+                        android:text="자격증"
+                        android:textColor="#FFFFFF" />
+
+                    <LinearLayout
+                        android:id="@+id/pick_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/pick1"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@drawable/border">
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="go_Computer"
+                                android:text="컴퓨터공학부" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="정보처리기사" />
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="정보보안기사" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/pick"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="공지사항 및 이벤트"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/notice"
+                    android:layout_below="@+id/textView"
+                    android:layout_width="320dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_selector"
+                        android:text="공지사항"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_selector"
+                        android:text="이벤트"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/main_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:layout_below="@+id/btn1">
+
+                        <TextView
+
+                            android:id="@+id/No_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:gravity="center"
+                            android:text="내용이 없음">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
