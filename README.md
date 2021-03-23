@@ -218,7 +218,7 @@ DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
 <img src="https://user-images.githubusercontent.com/80870181/112178911-80fead80-8c3d-11eb-9074-e6ca9c3d464f.png" width="400" height="400">
 </img>
 
-> 다음은 자신의 장바구니에 원하는 품목이 담겻는 지 확인하는 사진이다. 잘못 담긴 부분은 삭제도 가능하며, 총 가격도 포함되어있습니다.
+> 다음은 자신의 장바구니에 원하는 품목이 담겻는 지 확인하는 사진이다. 잘못 담긴 부분은 삭제도 가능하며, 장바구니에 있는 책들의 총 가격도 포함되어있습니다.
 
 <img src="https://user-images.githubusercontent.com/80870181/112178917-822fda80-8c3d-11eb-97ed-b2c412b11ad0.png" width="400" height="400">
 </img>
