@@ -19,6 +19,7 @@ bookstore (대학교 졸업작품 프로젝트)
 
 ## 내가 구현한 bookstore 기능 및 기술 설명
 <hr/>
+
 + 로그인 기능
 
 <img src="https://user-images.githubusercontent.com/80870181/112103867-bc718b80-8bed-11eb-8268-4cb90e29a440.png" width="400" height="400">
