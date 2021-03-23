@@ -18,9 +18,8 @@ bookstore (대학교 졸업작품 프로젝트)
 > 할 필요없이 어플안에 있는 채팅 기능을 통해 쉽게 연락하여 이용할 수 있습니다.
 > 고객센터부분에서는 어플의 문제점이나 자주 묻는 질문에 대해서 볼 수 있습니다.
 
-## bookstore 기능 및 기술 설명
+## 내가 구현한 bookstore 기능 및 기술 설명
 <hr/>
-
 + 로그인 기능
 > <img src="https://user-images.githubusercontent.com/80870181/112103867-bc718b80-8bed-11eb-8268-4cb90e29a440.png" width="400" height="400">
 > </img>
@@ -160,3 +159,10 @@ public class book {
 }
 </code>
 </pre>
+
+< 아래는 arrayList에 대한 정보와 일치한 파이어베이스 데이터입니다.
+
+<img src="https://user-images.githubusercontent.com/80870181/112129895-36643d80-8c0b-11eb-8833-4b290699aeea.PNG" width="400" height="400">
+</img>
+
++ 책 제고 sold out 부분
