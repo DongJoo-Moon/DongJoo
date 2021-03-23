@@ -156,7 +156,9 @@ public class book {
 <img src="https://user-images.githubusercontent.com/80870181/112129895-36643d80-8c0b-11eb-8833-4b290699aeea.PNG" width="400" height="400">
 </img>
 <hr/>
+
 + 검색(search) 기능
+
 > 어플 사용자가 원하는 도서를 쉽게 찾을 수 있도록 하는 기능입니다. 실행하는 방법은 어플 상단 오른쪽의 돋보기 모양을 클릭하면 됩니다.
 > 나타내는 방법은 아까 위의 학과 별 도서를 나타내는 방법과 매우 유사합니다.(recyclerview 와 ArrayList를 활용)
 > 다른 점은 사용자가 검색할려는 대상이 파이어베이스에 존재하는 도서인지를 확인하는 if 문이 달라졋을 뿐입니다.  
