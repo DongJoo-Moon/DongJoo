@@ -69,3 +69,4 @@ bookstore (대학교 졸업작품 프로젝트)
   </code>
   </pre>
 + 단과대 선택 및 도서 나열
+![Alt text](/path/to/img.jpg "Optional title")
