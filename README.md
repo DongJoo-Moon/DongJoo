@@ -85,8 +85,36 @@ value 값과 password의 value 값을 어플을 사용하는 사용자가 입력
 > <img src="https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png" width="400" height="400">
 > </img>
 > 
->    <img src="https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png" width="400" height="400">
+> <img src="https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png" width="400" height="400">
 > </img>
 > 
-> ddd
+> 책 정보 같은 경우에는 firebase에 있는 정보를 가져와서 자바의 배열을 쓰기보다는 가변성이 좋은 arrayList를 사용해 공간이 늘어날 때마다 능동적으로 대처할 수 있도록
+> 했습니다. 책 이름, 책 이미지, 책 저자, 출판사 .. 등 정보를 나타내기 위해서는 recyclerview를 사용해 0번부터 있는 정보를 나타내도록 하였습니다.
+> 
+> 그 부분에 대한 코드가 아래와 같습니다.
+> <pre>
+> <code>
+> DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    //파이어베이스 데이터베이스의 데이터를 받아오는 곳
+                    arrayList.clear();//기존 배열리스트 초기화
+                    for(DataSnapshot snapshot : dataSnapshot.getChildren()){ //반복문으로 데이터 list 추출
+                        book Book = snapshot.getValue(book.class); //만들어둿던 book객체에 데이터를 담는다.
+                        arrayList.add(Book);  //담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼준비
+                    }
+                    adapter.notifyDataSetChanged();//리스트 저장 및 새로고침
+                }
 
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                //db가져오던중 에러 발생
+                Log.e("computer_book", String.valueOf(databaseError.toException())); //에러문 출력
+            }
+        });
+        adapter = new MyBook(arrayList,this);
+        recyclerView.setAdapter(adapter);//리사이클러뷰에 어댑터 연결
+ > </code>
+ > </pre>
+ >  
