@@ -81,5 +81,8 @@ value 값과 password의 value 값을 어플을 사용하는 사용자가 입력
 > 먼저 단과대 선택은 어플 사용자들의 다양한 과들을 고려하여 각 단과대를 클릭하면 단과대에 있는 과가 팝업(popup menu)창 형식으로 뜨게 됩니다. 거기서 원하는
 > 과를 선택하여 들어가게 되면 그 학과의 전공책을 볼 수 있고, 구매하거나 장바구니에 담을 수 있습니다.
 > 어플은 아래와 같이 되어있습니다.
-> ![메인화면](https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png)
+> 
+><img src="https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png" width="400" height="400>
+ ></img>
+> 
 > ![전공책](https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png)
