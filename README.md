@@ -92,9 +92,10 @@ value 값과 password의 value 값을 어플을 사용하는 사용자가 입력
 > 했습니다. 책 이름, 책 이미지, 책 저자, 출판사 .. 등 정보를 나타내기 위해서는 recyclerview를 사용해 0번부터 있는 정보를 나타내도록 하였습니다.
 > 
 > 그 부분에 대한 코드가 아래와 같습니다.
-> <pre>
-> <code>
-> DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+> 
+<pre>
+<code>
+DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     //파이어베이스 데이터베이스의 데이터를 받아오는 곳
@@ -115,6 +116,6 @@ value 값과 password의 value 값을 어플을 사용하는 사용자가 입력
         });
         adapter = new MyBook(arrayList,this);
         recyclerView.setAdapter(adapter);//리사이클러뷰에 어댑터 연결
- > </code>
- > </pre>
- >  
+ </code>
+ </pre>
+>  
