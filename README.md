@@ -166,3 +166,33 @@ public class book {
 </img>
 
 + 책 제고 sold out 부분
+> 어플에 제시된 제고량보다 많은 양의 제품을 구매하거나 제고량이 0 일때 구매하게 되면 sold out이 되어 구매할 수 없도록 하며 다이얼로그(dialog)창을 띄워
+> 경고문 형식으로 구현하였습니다.
+> 
+> 다음은 소스 코드에 해당하는 부분입니다.
+<pre>
+<code>
+public void Sold_out_dialog() {
+
+        AlertDialog.Builder oDialog = new AlertDialog.Builder(computer.this,
+                android.R.style.Theme_DeviceDefault_Light_Dialog_Alert);
+
+        String strHtml =
+                "<b><font color='#ff0000'>Sold Out</font></b> 제품 입니다.<br/>";
+        Spanned oHtml;
+
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.N) {
+            // noinspection deprecation
+            oHtml = Html.fromHtml(strHtml);
+        } else {
+            oHtml = Html.fromHtml(strHtml, Html.FROM_HTML_MODE_LEGACY);
+        }
+
+        oDialog.setTitle("")
+                .setMessage(oHtml)
+                .setPositiveButton("ok", null)
+                .setCancelable(false)
+                .show();
+    }
+</code>
+</pre>
