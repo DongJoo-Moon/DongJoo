@@ -71,7 +71,6 @@ bookstore (대학교 졸업작품 프로젝트)
         });
   </code>
   </pre>
-![학번,비밀번호](https://user-images.githubusercontent.com/80870181/112099347-b5934a80-8be6-11eb-981a-b56adeb9a617.PNG)
 
 위는 파이어베이스에 담겨져 있는 학번과 비밀번호를 저장하는 곳에 있는 key 값과 value 값이다. 로그인을 하기 위해 값을 비교할 때는 아이디의 
 value 값과 password의 value 값을 어플을 사용하는 사용자가 입력한 값과 비교하여 맞으면 로그인이 되는 구조이다.
@@ -81,11 +80,11 @@ value 값과 password의 value 값을 어플을 사용하는 사용자가 입력
 > 과를 선택하여 들어가게 되면 그 학과의 전공책을 볼 수 있고, 구매하거나 장바구니에 담을 수 있습니다.
 > 어플은 아래와 같이 되어있습니다.
 > 
-> <img src="https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png" width="400" height="400">
-> </img>
+<img src="https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png" width="400" height="400">
+</img>
 > 
-> <img src="https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png" width="400" height="400">
-> </img>
+<img src="https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png" width="400" height="400">
+</img>
 > 
 > 책 정보 같은 경우에는 firebase에 있는 정보를 가져와서 자바의 배열을 쓰기보다는 가변성이 좋은 arrayList를 사용해 공간이 늘어날 때마다 능동적으로 대처할 수 있도록
 > 했습니다. 책 이름, 책 이미지, 책 저자, 출판사 .. 등 정보를 나타내기 위해서는 recyclerview를 사용해 0번부터 있는 정보를 나타내도록 하였습니다.
