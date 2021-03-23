@@ -82,7 +82,6 @@ value 값과 password의 value 값을 어플을 사용하는 사용자가 입력
 > 
 <img src="https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png" width="400" height="400">
 </img>
-> 
 <img src="https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png" width="400" height="400">
 </img>
 > 
