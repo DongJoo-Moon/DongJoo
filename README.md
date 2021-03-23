@@ -165,34 +165,41 @@ public class book {
 <img src="https://user-images.githubusercontent.com/80870181/112129895-36643d80-8c0b-11eb-8833-4b290699aeea.PNG" width="400" height="400">
 </img>
 
-+ 책 제고 sold out 부분
-> 어플에 제시된 제고량보다 많은 양의 제품을 구매하거나 제고량이 0 일때 구매하게 되면 sold out이 되어 구매할 수 없도록 하며 다이얼로그(dialog)창을 띄워
-> 경고문 형식으로 구현하였습니다.
++ 검색(search) 기능
+> 어플 사용자가 원하는 도서를 쉽게 찾을 수 있도록 하는 기능입니다. 실행하는 방법은 어플 상단 오른쪽의 돋보기 모양을 클릭하면 됩니다.
+> 나타내는 방법은 아까 위의 학과 별 도서를 나타내는 방법과 매우 유사합니다.(recyclerview 와 ArrayList를 활용)
+> 다른 점은 사용자가 검색할려는 대상이 파이어베이스에 존재하는 도서인지를 확인하는 if 문이 달라졋을 뿐입니다. 
 > 
-> 다음은 소스 코드에 해당하는 부분입니다.
+> 다음 코드가 검색 기능 부분입니다.
 <pre>
 <code>
-public void Sold_out_dialog() {
+DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                //파이어베이스 데이터베이스의 데이터를 받아오는 곳
+                arrayList.clear();//기존 배열리스트 초기화
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {//반복문으로 데이터 list 추출
+                    if(snapshot.child("title").getValue().toString().equals(book_name)){
+                        book Book = snapshot.getValue(book.class);//만들어둿던 book객체에 데이터를 담는다.
+                        arrayList.add(Book);//담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼준비
+                    }
+                }
+                adapter.notifyDataSetChanged();//리스트 저장 및 새로고침
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                //db가져오던중 에러 발생
+                Log.e("search_book", String.valueOf(databaseError.toException())); //에러문 출력
+            }
+        });
+        adapter = new MyBook(arrayList, this);
 
-        AlertDialog.Builder oDialog = new AlertDialog.Builder(computer.this,
-                android.R.style.Theme_DeviceDefault_Light_Dialog_Alert);
-
-        String strHtml =
-                "<b><font color='#ff0000'>Sold Out</font></b> 제품 입니다.<br/>";
-        Spanned oHtml;
-
-        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.N) {
-            // noinspection deprecation
-            oHtml = Html.fromHtml(strHtml);
-        } else {
-            oHtml = Html.fromHtml(strHtml, Html.FROM_HTML_MODE_LEGACY);
-        }
-
-        oDialog.setTitle("")
-                .setMessage(oHtml)
-                .setPositiveButton("ok", null)
-                .setCancelable(false)
-                .show();
-    }
+        recyclerView.setAdapter(adapter);
 </code>
 </pre>
+
+> 검색 기능 부분도 똑같이 구매하거나 장바구니에 담을 수 있는 기능을 수행할 수 있습니다.
+> 
+> 검색하면 아래 사진과 같이 나오게 됩니다.
+<img src="https://user-images.githubusercontent.com/80870181/112151237-58b68500-8c24-11eb-84ff-e5e030aa8b43.png" width="400" height="400">
+</img>
