@@ -69,4 +69,4 @@ bookstore (대학교 졸업작품 프로젝트)
   </code>
   </pre>
 + 단과대 선택 및 도서 나열
-![Alt text](/path/to/img.jpg "Optional title")
+![학번,비밀번호](https://user-images.githubusercontent.com/80870181/112099347-b5934a80-8be6-11eb-981a-b56adeb9a617.PNG)
