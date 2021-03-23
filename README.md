@@ -22,7 +22,7 @@ bookstore (대학교 졸업작품 프로젝트)
 <hr/>
 
 + 로그인 기능
-> <img src ="https://user-images.githubusercontent.com/80870181/112103867-bc718b80-8bed-11eb-8268-4cb90e29a440.png" width="400" height="400">
+> <img src="https://user-images.githubusercontent.com/80870181/112103867-bc718b80-8bed-11eb-8268-4cb90e29a440.png" width="400" height="400">
 > </img>
 > 
 > 학번과 비밀번호를 입력할 수 있는 UI를 통해 입력한 뒤 로그인 버튼을 누르면 학번 값과 비밀번호 값이 문자열 값으로 변환되어
@@ -82,7 +82,11 @@ value 값과 password의 value 값을 어플을 사용하는 사용자가 입력
 > 과를 선택하여 들어가게 되면 그 학과의 전공책을 볼 수 있고, 구매하거나 장바구니에 담을 수 있습니다.
 > 어플은 아래와 같이 되어있습니다.
 > 
-> <img src="https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png" width="400" height="400>
+> <img src="https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png" width="400" height="400">
 > </img>
 > 
-> ![전공책](https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png)
+> <img src="https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png" width="400" height="400">
+> </img>
+> 
+> ddd
+
