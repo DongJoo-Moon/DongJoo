@@ -22,7 +22,7 @@ bookstore (대학교 졸업작품 프로젝트)
 <hr/>
 
 + 로그인 기능
-+ <img width="400px",height="400px">
++ <img width="400px" height="400px">
 > ![로그인](https://user-images.githubusercontent.com/80870181/112103867-bc718b80-8bed-11eb-8268-4cb90e29a440.png)
 > </img>
 > 학번과 비밀번호를 입력할 수 있는 UI를 통해 입력한 뒤 로그인 버튼을 누르면 학번 값과 비밀번호 값이 문자열 값으로 변환되어
