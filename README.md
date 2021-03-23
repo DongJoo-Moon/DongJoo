@@ -31,14 +31,14 @@ bookstore (대학교 졸업작품 프로젝트)
  loginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                final String id = EditText_id.getText().toString();
+                final String id = EditText_id.getText().toString(); // 내가 입력한 데이터 값
                 final String pw = EditText_password.getText().toString();
                 databaseReference.child(id).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         Iterator<DataSnapshot> child = dataSnapshot.getChildren().iterator(); //users의 모든 자식들의 key값과 value 값들을 iterator로 참조합니다.
                         if(dataSnapshot.getChildrenCount() > 0 ){
-                            String fbPw = dataSnapshot.child("password").getValue().toString();
+                            String fbPw = dataSnapshot.child("password").getValue().toString(); //파이어베이스에 있는 데이터 값
                             String fbname = dataSnapshot.child("name").getValue().toString(); //firebase에서 name의 Value값을 get하고 string 시킴.
 
                             if(fbPw.equals(pw)){ // 값 비교하는 부분
@@ -68,5 +68,9 @@ bookstore (대학교 졸업작품 프로젝트)
         });
   </code>
   </pre>
-+ 단과대 선택 및 도서 나열
 ![학번,비밀번호](https://user-images.githubusercontent.com/80870181/112099347-b5934a80-8be6-11eb-981a-b56adeb9a617.PNG)
+
+위는 파이어베이스에 담겨져 있는 학번과 비밀번호를 저장하는 곳에 있는 key 값과 value 값이다. key 값은 왼쪽에 있는 name 이 되고,
+value 값은 익명이다. 비교할 때는 위의 aaa가 아이디가 되고, password가 비밀번호가 되어 비교하게 된다.
+
++ 단과대 선택 및 도서 나열
