@@ -72,6 +72,8 @@ bookstore (대학교 졸업작품 프로젝트)
 위는 파이어베이스에 담겨져 있는 학번과 비밀번호를 저장하는 곳에 있는 key 값과 value 값이다. 로그인을 하기 위해 값을 비교할 때는 아이디의 
 value 값과 password의 value 값을 어플을 사용하는 사용자가 입력한 값과 비교하여 맞으면 로그인이 되는 구조이다.
 
+<hr/>
+
 + 단과대 선택 및 도서 구매,장바구니
 > 먼저 단과대 선택은 어플 사용자들의 다양한 과들을 고려하여 각 단과대를 클릭하면 단과대에 있는 과가 팝업(popup menu)창 형식으로 뜨게 됩니다. 거기서 원하는
 > 과를 선택하여 들어가게 되면 그 학과의 전공책을 볼 수 있고, 구매하거나 장바구니에 담을 수 있습니다.
@@ -191,7 +193,6 @@ DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
 </pre>
 
 > 검색 기능 부분도 똑같이 구매하거나 장바구니에 담을 수 있는 기능을 수행할 수 있습니다.
-> 
 > 검색하면 아래 사진과 같이 나오게 됩니다.
 <img src="https://user-images.githubusercontent.com/80870181/112151237-58b68500-8c24-11eb-84ff-e5e030aa8b43.png" width="400" height="400">
 </img>
