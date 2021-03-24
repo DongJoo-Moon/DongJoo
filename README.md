@@ -81,8 +81,9 @@ bookstore (대학교 졸업작품 프로젝트)
 
 + 단과대 선택 및 도서 구매,장바구니
 
-> 먼저 단과대 선택은 어플 사용자들의 다양한 과들을 고려하여 각 단과대를 클릭하면 단과대에 있는 과가 팝업(popup menu)창 형식으로 뜨게 됩니다. 거기서 원하는
-> 과를 선택하여 들어가게 되면 그 학과의 전공책을 볼 수 있고, 구매하거나 장바구니에 담을 수 있습니다.
+> 먼저 단과대 선택은 어플 사용자들의 다양한 과들을 고려하여 각 단과대를 클릭하면 단과대에 있는 과가 팝업(popup menu)창 형식으로 뜨게 됩니다. 
+> 거기서 원하는 과를 선택하여 들어가게 되면 그 학과의 전공책을 볼 수 있고, 구매하거나 장바구니에 담을 수 있습니다.
+
 > 어플은 아래와 같이 되어있습니다. 
 
 <img src="https://user-images.githubusercontent.com/80870181/112122852-07969900-8c04-11eb-8ac3-9c026ebe99e5.png" width="400" height="400">
@@ -206,7 +207,7 @@ DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
 
 > 검색 기능 부분도 똑같이 구매하거나 장바구니에 담을 수 있는 기능을 수행할 수 있습니다.
 > 검색하면 아래 사진과 같이 나오게 됩니다.
-> 
+ 
 <img src="https://user-images.githubusercontent.com/80870181/112151237-58b68500-8c24-11eb-84ff-e5e030aa8b43.png" width="400" height="400">
 </img>
 
