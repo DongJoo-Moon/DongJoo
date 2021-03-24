@@ -169,7 +169,7 @@ public class book {
 </code>
 </pre>
 
-< 아래는 ArrayList에 대한 정보와 일치한 파이어베이스 데이터입니다.
+> 아래는 ArrayList에 대한 정보와 일치한 파이어베이스 데이터입니다.
 
 <img src="https://user-images.githubusercontent.com/80870181/112129895-36643d80-8c0b-11eb-8833-4b290699aeea.PNG" width="400" height="400">
 </img>
