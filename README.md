@@ -231,3 +231,60 @@ DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
 
 <img src="https://user-images.githubusercontent.com/80870181/112178917-822fda80-8c3d-11eb-97ed-b2c412b11ad0.png" width="400" height="400">
 </img>
+
+> 먼저 장바구니 버튼을 클릭하면 발생하는 'setOnClickListener'를 이용하여 화면의 이동없이 AlertDialog 형식으로 바로 개수를 정할 수 있도록 하였습니다.
+> 해당하는 코드는 아래와 같습니다.
+<pre>
+<code>
+holder.book_shoppingbtn.setOnClickListener(new View.OnClickListener() {//장바구니 클릭시
+            @Override
+            public void onClick(View v) { //장바구니 버튼을 클릭했을 시
+                position1 = position;
+                title = holder.book_title.getText().toString();
+                price = holder.book_price.getText().toString();
+                author = holder.book_author.getText().toString();
+                publisher = holder.book_publisher.getText().toString();
+                image = arrayList.get(position1).getimage();
+
+                final EditText edittext = new EditText(context);
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setTitle("장바구니 개수 입력");
+                builder.setMessage("개수를 입력해주세요.");
+                builder.setView(edittext);
+                builder.setPositiveButton("입력",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                the_number = edittext.getText().toString();
+                                Map<String, Object> mHashmap = new HashMap<>(); //HashMap 은 해시함수를 통해 키와 값을 매핑하는 방식으로 데이터를 다루는 자료구조 알고리즘을 구현한 클래스 입니다.
+
+                                mHashmap.put("title", title);
+                                mHashmap.put("price", price);
+                                mHashmap.put("author", author);
+                                mHashmap.put("publisher", publisher);
+                                mHashmap.put("image",  image);
+                                mHashmap.put("shopping_S_number",snum);
+                                mHashmap.put("the_number",the_number);
+
+                                DatabaseReference1.child(snum).child(title).updateChildren(mHashmap);
+
+                                Toast.makeText(context, title + "이 " + "장바구니에 담겼습니다.", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                builder.setNegativeButton("취소",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        });
+                builder.show();
+            }
+        });
+</code>
+</pre>
+
+> 위의 코드에서 ArrayList를 쓰지않고 HashMap을 쓴 이유는 ArrayList밖에 몰랐던 점도 있지만 HashMap이 Key-Value 쌍으로 나타내기 좋은 점과 Key값으로 Value값을 탐색할 수 있다는
+> 점에서 HashMap을 사용하여 장바구니에 있는 책에 대한 데이터를 나타내었습니다. 위의 코드와 같이 장바구니에 담는 걸 선택하면 파이어베이스는 다음과 같이 업데이트가 됩니다.
+
+<img src="https://user-images.githubusercontent.com/80870181/112314627-92eb5980-8cec-11eb-86c4-f9547b270fb2.PNG" width="400" height="400">
+</img>
+
