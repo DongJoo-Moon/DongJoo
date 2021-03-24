@@ -217,7 +217,6 @@ DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
 > 도서 어플의 대표적인 기능이라고 볼 수 있는 장바구니 기능입니다. 이용하는 방법은 간단합니다. 책에 대해 검색을 하거나 책에 대한 정보를 알아 볼때 구매하기 옆에 항상 장바구니로 
 > 넣을 수 있도록 버튼 형식으로 구현시켜놨습니다. 장바구니 버튼을 누르면 안드로이드의 alertDialog 가 떠서 몇 개를 주문 할지를 정할 수 있는 경고창이 뜹니다. 여기서 수량을 정하고
 > 확인을 누르면 어플 사용자의 장바구니에 원하는 품목의 책과 수량이 담기게 됩니다.
-
 > 장바구니 버튼을 클릭했을 때 alertDialog는 다음과 같다. 재고량보다 초과하여 장바구니에 담을 시에도 alertDialog가 뜨게 되어있다.
 
 <img src="https://user-images.githubusercontent.com/80870181/112178911-80fead80-8c3d-11eb-9074-e6ca9c3d464f.png" width="400" height="400">
