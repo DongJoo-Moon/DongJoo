@@ -125,8 +125,8 @@ DatabaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
         recyclerView.setAdapter(adapter);//리사이클러뷰에 어댑터 연결
  </code>
  </pre>
- 
-> 책에 대한 정보 arrayList에 대한 코드는 다음과 같습니다.
+
+> 책에 대한 정보 ArrayList에 대한 코드는 다음과 같습니다.
 
 <pre>
 <code>
