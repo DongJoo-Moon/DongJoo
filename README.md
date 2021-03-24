@@ -72,6 +72,9 @@ bookstore (대학교 졸업작품 프로젝트)
         });
   </code>
   </pre>
+  
+<img src="https://user-images.githubusercontent.com/80870181/112268355-2f483880-8cba-11eb-8f01-7107a832cbf1.png" width="400" height="400">
+</img>
 
 > 위는 파이어베이스에 담겨져 있는 학번과 비밀번호를 저장하는 곳에 있는 key 값과 value 값이다. 
 > 로그인을 하기 위해 값을 비교할 때는 아이디의 value 값과 password의 value 값을 어플을 사용하는 사용자가 입력한 값과 비교하여 맞으면 
