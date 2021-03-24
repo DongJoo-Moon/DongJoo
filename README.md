@@ -287,4 +287,4 @@ holder.book_shoppingbtn.setOnClickListener(new View.OnClickListener() {//장바�
 
 <img src="https://user-images.githubusercontent.com/80870181/112314627-92eb5980-8cec-11eb-86c4-f9547b270fb2.PNG" width="400" height="400">
 </img>
-
+<hr/>
