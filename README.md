@@ -94,7 +94,9 @@ bookstore (대학교 졸업작품 프로젝트)
 <img src="https://user-images.githubusercontent.com/80870181/112269028-2f950380-8cbb-11eb-9000-5e7dafc33d9b.png" width="400" height="400">
 </img>
 
-> 자신이 원하는 단과대(item)를 선택하면 발생하는 'popup.setOnMenuItemClickListener'를 이용하여 원하는 과를 눌럿을 때 intent 되도록 하였습니다.
+> 자신이 원하는 단과대(item)를 선택하면 발생하는 'popup.setOnMenuItemClickListener'를 이용하여 원하는 과를 눌럿을 때 화면전환(intent) 되도록 하였습니다.
+
+> 아래는 원하는 과를 선택하였을 때 나오는 책 목록과 도서앱에서 이용할 수 있는 구매와 장바구니를 이용할 수 있습니다.
 
 <img src="https://user-images.githubusercontent.com/80870181/112122842-06656c00-8c04-11eb-8dab-30f4ed4ae2d6.png" width="400" height="400">
 </img> 
