@@ -181,6 +181,49 @@ public class book {
 
 <hr/>
 
++ 이미지 슬라이드 기능
+
+> 이미지 슬라이더 기능의 목표는 기존의 도서 어플의 베스트 샐러처럼 오른쪽에서 왼쪽으로 넘어가게 하여 쉽게 접근하는 게 목표였습니다. 하지만 저는 전공책말고도 다른 자격증 책을
+> 판매했을 때를 대비해서 넣은 기능입니다. 이미지 슬라이더의 기능을 수행하려고 하면 먼저 레이아웃에 이미지 슬라이더를 추가해야 합니다. 그리고 메인 코딩을 하는 부분에 이미지에
+> 해당하는 코드와 이미지를 추가시켜야 합니다. 이 부분은 ArrayList를 활용하여 구현하였습니다.
+> 먼저 레이아웃에 이미지 슬라이더를 추가한 부분입니다.
+ 
+<pre>
+<code>
+   <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:auto_cycle="true"
+                        app:corner_radius="20"
+                        app:delay="0"
+                        app:error_image="@drawable/color"
+                        app:period="1000"
+                        app:placeholder="@drawable/color" />
+</pre>
+</code>
+
+> 위와 같이 이미지 슬라이더에 +id를 추가해야 나중에 이미지 슬라이더를 클릭했을 때와 어떤 이미지를 클릭했는 지 확인할 때 쉽게 확인할 수 있습니다.
+> 다음은 Activity 부분에서 슬라이더를 추가한 부분입니다.
+
+<pre>
+<code>
+        ImageSlider imageSlider = root.findViewById(R.id.slider);  //슬라이드 부분
+
+        List<SlideModel> slideModels = new ArrayList<>();
+        slideModels.add(new SlideModel("https://firebasestorage.googleapis.com/v0/b/bookstore-51361.appspot.com/o/NCS1.jpg?alt=media&token=c382b5db-2438-45e7-bc05-b298bf7314ec"));
+        slideModels.add(new SlideModel("https://firebasestorage.googleapis.com/v0/b/bookstore-51361.appspot.com/o/degeter2.jpeg?alt=media&token=af97d574-1df2-4d3f-9613-d549bbff0807"));
+        slideModels.add(new SlideModel("https://firebasestorage.googleapis.com/v0/b/bookstore-51361.appspot.com/o/degeter3.jpg?alt=media&token=2c1bcfe7-7daa-4931-a0ab-5618e01d722d"));
+        slideModels.add(new SlideModel("https://firebasestorage.googleapis.com/v0/b/bookstore-51361.appspot.com/o/degeterr.jpg?alt=media&token=28d0c218-e5e7-417c-8ff3-df24b54f2d8c"));
+        imageSlider.setImageList(slideModels, true);
+</pre>
+</code>
+
+> 위와 같이 이미지는 인터넷의 url을 가져오거나 데이터베이스에 있는 url을 가져와도 이미지를 볼 수 있도록 되어있습니다.
+> 마지막으로 이미지 슬라이더 부분에 대한 어플의 사진입니다.
+
+<hr/>
+
 + 검색(search) 기능
 
 > 어플 사용자가 원하는 도서를 쉽게 찾을 수 있도록 하는 기능입니다. 실행하는 방법은 어플 상단 오른쪽의 돋보기 모양을 클릭하면 됩니다.
