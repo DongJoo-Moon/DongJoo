@@ -187,7 +187,6 @@ public class book {
 > 판매했을 때를 대비해서 넣은 기능입니다. 이미지 슬라이더의 기능을 수행하려고 하면 먼저 레이아웃에 이미지 슬라이더를 추가해야 합니다. 그리고 메인 코딩을 하는 부분에 이미지에
 > 해당하는 코드와 이미지를 추가시켜야 합니다. 이 부분은 ArrayList를 활용하여 구현하였습니다.
 > 먼저 레이아웃에 이미지 슬라이더를 추가한 부분입니다.
- 
 <pre>
 <code>
    <com.denzcoskun.imageslider.ImageSlider
@@ -202,10 +201,8 @@ public class book {
                         app:placeholder="@drawable/color" />
 </pre>
 </code>
-
 > 위와 같이 이미지 슬라이더에 +id를 추가해야 나중에 이미지 슬라이더를 클릭했을 때와 어떤 이미지를 클릭했는 지 확인할 때 쉽게 확인할 수 있습니다.
 > 다음은 Activity 부분에서 슬라이더를 추가한 부분입니다.
-
 <pre>
 <code>
         ImageSlider imageSlider = root.findViewById(R.id.slider);  //슬라이드 부분
@@ -218,7 +215,6 @@ public class book {
         imageSlider.setImageList(slideModels, true);
 </pre>
 </code>
-
 > 위와 같이 이미지는 인터넷의 url을 가져오거나 데이터베이스에 있는 url을 가져와도 이미지를 볼 수 있도록 되어있습니다.
 > 마지막으로 이미지 슬라이더 부분에 대한 어플의 사진입니다.
 
