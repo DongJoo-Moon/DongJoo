@@ -191,7 +191,7 @@ public class book {
 <pre>
 <code>
 
-   <com.denzcoskun.imageslider.ImageSlider
+   com.denzcoskun.imageslider.ImageSlider
                         android:id="@+id/slider"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -200,7 +200,7 @@ public class book {
                         app:delay="0"
                         app:error_image="@drawable/color"
                         app:period="1000"
-                        app:placeholder="@drawable/color" />
+                        app:placeholder="@drawable/color" 
 </pre>
 </code>
 
